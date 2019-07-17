@@ -1,0 +1,18 @@
+def loopy(max, increment):
+    i = 0
+    numbers = []
+
+    while i < max:
+        print(f"At the top i is {i}")
+        numbers.append(i)
+
+        i = i + increment
+        print("Numbers now: ", numbers)
+        print(f"At the bottom i is {i}")
+
+    print("The numbers: ")
+
+    for num in numbers:
+        print(num)
+
+loopy(20, 3)
